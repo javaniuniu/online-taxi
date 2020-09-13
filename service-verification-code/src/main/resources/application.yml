@@ -1,10 +1,28 @@
 
 server:
-  port: 8082
+  port: 8012
 
-eureka:
-  client:
-    enabled: false
 spring:
   application:
     name: service-verification-code
+  redis:
+    host: 127.0.0.1
+    port: 6377
+    password: 123456
+    database: 0
+#    lettuce:
+#      shutdown-timeout: 200ms
+#      pool:
+#        max-active: 7
+#        max-idle: 7
+#        min-idle: 2
+#        max-wait: -1ms
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7900:7900/eureka/
+    enabled: true
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 1

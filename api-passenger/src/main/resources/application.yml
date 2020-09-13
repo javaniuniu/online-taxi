@@ -5,7 +5,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7901/eureka/ #,http://localhost:7900/eureka/,http://localhost:7902/eureka/
+      defaultZone: http://localhost:7900/eureka/ #,http://localhost:7900/eureka/,http://localhost:7902/eureka/
     registry-fetch-interval-seconds: 30
     enabled: true
     #,http://localhost:7901/eureka/,http://localhost:7902/eureka/
@@ -17,8 +17,8 @@ spring:
     name: api-passenger
 logging:
   level:
-    root: debug
-ribbon:
-  eager-load:
-    enabled: true
-    clients: demo
+    root: info
+#ribbon:
+#  eager-load:
+#    enabled: true
+#    clients: demo
