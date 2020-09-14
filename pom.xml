@@ -10,10 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>eureka-service</module>
+        <module>cloud-eureka</module>
         <module>api-passenger</module>
         <module>service-sms</module>
         <module>service-verification-code</module>
+        <module>service-passenger-user</module>
+        <module>cloud-zuul</module>
     </modules>
 
     
